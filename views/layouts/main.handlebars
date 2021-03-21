@@ -5,19 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog</title>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="../../public/js/blog.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+    <title>Bravo Tech Blog</title>
+
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    {{{ body }}}
+    <div class="wrapper">
+        <header>
+
+            <nav>
+                {{!-- 14.3.7 we are checking for loggedIn in the main layout, but we're only passing loggedIn to the
+                single-post.handlebars
+                template. Fortunately, variables that are passed to view templates are automatically passed to the main
+                layout. --}}
+                {{#if loggedIn}}
+                <a href="/">home</a>
+                <a href="/dashboard">dashboard</a>
+                <button id="logout" class="btn-no-style">logout</button>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
+            </nav>
+            <div class="title-wrapper">
+                <h1>
+                    <a href="/">Blogger-Tech</a>
+                </h1>
+            </div>
+        </header>
+        <main>
+            {{{ body }}}
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 
 </body>
 
