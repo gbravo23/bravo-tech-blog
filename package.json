@@ -1,0 +1,28 @@
+{
+  "name": "bravo-tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbravo23/bravo-tech-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbravo23/bravo-tech-blog/issues"
+  },
+  "homepage": "https://github.com/gbravo23/bravo-tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.5.1",
+    "session": "^0.1.0"
+  }
+}
