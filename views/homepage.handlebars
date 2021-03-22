@@ -1,10 +1,6 @@
-{{!-- USED BY controllers/home-routes.js --}}
-
 <ol class="post-list">
-    {{!-- looping over each item in post array with #each and renaming items to post --}}
     {{#each posts as |post|}}
     <li>
-
         <article class="post">
             <div class="title">
                 <h2><a href="/post/{{id}}">{{title}}</a> <span>(created by {{user.username}} on {{format_date
@@ -14,10 +10,6 @@
                 <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
             </div>
         </article>
-        {{!-- to include a partial use > and then name of file and object passing --}}
-        {{!-- {{> post-info post }} --}}
-
     </li>
-    {{!-- end of looping over each item in post array --}}
     {{/each}}
 </ol>
