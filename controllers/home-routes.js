@@ -1,13 +1,8 @@
-// USED BY controllers/index.js
-
 const router = require('express').Router();
 
 const sequelize = require('../config/connection');
 
 const { Post, User, Comment } = require('../models');
-
-// Because we've hooked up a template engine, we can now use res.render() and specify which template we want to use. 
-// In this case, we want to render the homepage.handlebars template (the .handlebars extension is implied). 
 
 router.get('/', (req, res) => {
     Post.findAll({
@@ -33,12 +28,8 @@ router.get('/', (req, res) => {
         ]
     })
         .then(dbPostData => {
-            // You did not need to serialize data before when you built API routes, because the res.json() method 
-            // automatically does that for you.
             const posts = dbPostData.map(post => post.get({ plain: true }));
 
-            // This will loop over and map each Sequelize object into a serialized version of itself, saving the 
-            // results in a new posts array.
             res.render('homepage', {
                 posts,
                 loggedIn: req.session.loggedIn
@@ -59,7 +50,6 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-// find a single post
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
@@ -92,10 +82,8 @@ router.get('/post/:id', (req, res) => {
                 return;
             }
 
-            // serialize the data
             const post = dbPostData.get({ plain: true });
 
-            // pass data to template
             res.render('single-post', {
                 post,
                 loggedIn: req.session.loggedIn
