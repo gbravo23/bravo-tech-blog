@@ -8,8 +8,8 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: rgb(182, 212, 182);
-    color: rgb(58, 41, 41);
+    background-color: rgb(166, 221, 224);
+    color: rgb(6, 47, 138);
   }
   .wrapper {
     width: 100%;
@@ -23,8 +23,8 @@
   header {
     display: flex;
     flex-flow: row wrap;
-    background-color: rgb(58, 41, 41);
-    color: rgb(182, 212, 182);
+    background-color: rgb(6, 47, 138);
+    color: rgb(166, 221, 224);
     justify-content: left;
     align-items: left;
     padding: 0 1%;
@@ -39,7 +39,7 @@
   nav a {
     margin-left: 16px;
     text-decoration: none;
-    color:  rgb(182, 212, 182);
+    color:  rgb(166, 221, 224);
     font-weight: bold;
     transition: color .1s;
   }
@@ -54,7 +54,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: rgb(182, 212, 182);
+    color: rgb(166, 221, 224);
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -63,14 +63,14 @@
   
   .btn-no-style:hover {
     background: none;
-    color: rgb(70, 100, 70);
+    color: rgb(166, 221, 224);
   }
   
   button {
-    background-color: rgb(58, 41, 41);
+    background-color: rgb(6, 47, 138);
     border: 0;
     padding: 1%;
-    color:rgb(182, 212, 182);
+    color:rgb(166, 221, 224);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
@@ -78,7 +78,7 @@
   }
   
   button:hover {
-    color:rgb(70, 100, 70);
+    color:rgb(166, 221, 224);
   }
 
   .title-wrappper {
@@ -87,49 +87,49 @@
   
   .title-wrapper h1 {
     font-size: 2em;
-    background-color:rgb(182, 212, 182); 
+    background-color:rgb(166, 221, 224);
     margin: 16px;
     padding: 2px;
     border-radius: 5px;
-    box-shadow: 10px 5px 5px rgb(121, 87, 87);
+    box-shadow: 10px 5px 5px rgb(108, 113, 114);
   }
   
   .title-wrapper h1 a {
-    color: rgb(58, 41, 41);
+    color: rgb(6, 47, 138);
   } 
   .title-wrapper h1 a:hover {
-    color: rgb(121, 87, 87);
+    color: rgb(108, 113, 114);
   } 
 
   .edit-post-form a, .meta a, .post-new a {
     text-decoration: none;
-    color:  rgb(58, 41, 41);
+    color:  rgb(6, 47, 138);
     font-weight: bold;
     transition: color .1s;
   }
   
   .edit-post-form a:hover, .meta a:hover, .post-new a:hover {
-    color:rgb(121, 87, 87);
+    color:rgb(108, 113, 114);
   }
 
   .post-new a {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid  rgb(58, 41, 41);
+    border: 1px solid  rgb(6, 47, 138);
   }
 
   .post-new a:hover {
-    border: 1px solid rgb(121, 87, 87);
-    box-shadow: 10px 5px 5px rgb(121, 87, 87);
+    border: 1px solid rgb(108, 113, 114);
+    box-shadow: 10px 5px 5px rgb(108, 113, 114);
   }
   
   .edit-post-form a:hover, .meta a:hover, .post-new a:hover {
-    color:rgb(121, 87, 87);
+    color:rgb(108, 113, 114);
   }
 
  .title h2 a {
     text-decoration: none;
-    color:  rgb(182, 212, 182); 
+    color:  rgb(166, 221, 224);
     transition: color .1s;
   }
   
@@ -152,7 +152,7 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid  rgb(58, 41, 41);
+    border: 1px solid  rgb(6, 47, 138);
   }
   
   .comment-body {
@@ -189,11 +189,11 @@
   .post {
     margin-bottom: 2%;
     line-height: 150%;
-    border:2px solid rgb(58, 41, 41);
+    border:2px solid rgb(6, 47, 138);
   }
 
   .post .title h2 {
-    background-color: rgb(58, 41, 41);
+    background-color: rgb(6, 47, 138);
     color: rgb(182, 212, 182); 
     padding: 4px;
     margin: 0;
@@ -207,7 +207,7 @@
   .post .title p {
     font-style: italic;
     font-size: 90%;
-    color:rgb(58, 41, 41);
+    color:rgb(6, 47, 138);
     margin: 4px;
   }
 
@@ -218,7 +218,7 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-    color: rgb(58, 41, 41);
+    color: rgb(6, 47, 138);
   }
     
   .comment-form {
@@ -249,7 +249,7 @@
   }
   
   footer {
-    border-top: 1px solid rgb(58, 41, 41);
+    border-top: 1px solid rgb(6, 47, 138);
     display: flex;
     justify-content: center;
     padding: 1%;
